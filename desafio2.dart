@@ -19,7 +19,7 @@ void main() {
   // Baseado na lista acima.
   // 1 - Remover os duplicados - Rodrigo 0-3 / - Helena 5-9-13 / - Leonardo 6-12
   // 2 - Me mostre a quantidade de pessoas do sexo Masculino e Feminino
-  // 3 - Filtrar e deixar a lista somente com pessoas maiores de 18 anos
+  // 3 - Filtrar e deixar a lista somente com pessoas maiores de 18 anos - Leonardo / Guilherme
   //     e mostre a quantidade de pessoas com mais de 18 anos
   // 4 - Encontre a pessoa mais velha.
 
@@ -71,12 +71,9 @@ void main() {
   print(pessoas);
   var myList = cleanUpDuplicateList(pessoas);
   var myOfAgeList = ofAgeList(myList);
-  print('\nQuantidade Masculino: ' +
-      qtdBySexType(myOfAgeList, 'Masculino').toString());
-  print('\nQuantidade Feminino: ' +
-      qtdBySexType(myOfAgeList, 'Feminino').toString());
-  print('\nQuantidade Total de pessoas maiores de 18 : ' +
-      myOfAgeList.length.toString());
+  print('\nQuantidade Masculino: ' + qtdBySexType(myOfAgeList, 'Masculino').toString());
+  print('\nQuantidade Feminino: ' + qtdBySexType(myOfAgeList, 'Feminino').toString());
+  print('\nQuantidade Total de pessoas maiores de 18 : ' + myOfAgeList.length.toString());
   print('\nPessoa Mais velha: ' + oldestPersonInList(myOfAgeList));
   print('\nLista Maiores de idade nao duplicados\n');
   print(myOfAgeList);
